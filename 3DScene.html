@@ -4,11 +4,33 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <!-- Asset Management System -->
+      <a-assets>
+        <img id="blue-sky" src="assets/bluesky.jpg">
+        <a-asset-item id="spiderman1-o" src="assets/spiderman2/M-CoC_iOS_HERO_Peter_Parker_Spider-Man_Stark_Enhanced.obj"></a-asset-item>
+        <a-asset-item id="spiderman1-m" src="assets/spiderman2/M-CoC_iOS_HERO_Peter_Parker_Spider-Man_Stark_Enhanced.mtl"></a-asset-item>
+        <!-- "The Amazing Spiderman" (https://skfb.ly/6sRDt) by iqbalmulyawan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+        <a-asset-item id="spiderman2-g" src="assets/spiderman1/scene.gltf"></a-asset-item>
+        <!-- "spiderman original" (https://skfb.ly/6RxT7) by NVN3 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+        <a-asset-item id="box-g" src="assets/boxes/scene.gltf"></a-asset-item>
+      </a-assets>
+      <!-- Camera -->
+      <a-entity position="-3 0 57">
+        <a-camera></a-camera>
+      </a-entity>
+      
+      <a-plane position="-3 0 54" rotation="-90 0 0" width="8" height="5" color="#9395B2"></a-plane>
+      
+      <!-- Sky -->
+      <a-sky src="#blue-sky"></a-sky>
+      
+      <!-- Boxes -->
+      <a-entity gltf-model="#box-g" position="0 0 0" rotation="0 -60 0" size="1 1 1"></a-entity>
+      
+      <!-- SpiderMan1 -->
+      <a-entity obj-model="obj: #spiderman1-o; mtl: #spiderman1-m" position="-4.7 0 54" rotation="0 60 0"></a-entity>
+      <!-- SpiderMan2 -->
+      <a-entity gltf-model="#spiderman2-g" position="-1.7 0 54" rotation="0 -60 0"></a-entity>
     </a-scene>
   </body>
 </html>
