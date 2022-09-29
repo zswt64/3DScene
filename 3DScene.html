@@ -9,12 +9,8 @@
         <img id="blue-sky" src="assets/bluesky.jpg">
         <a-asset-item id="spiderman1-o" src="assets/Spider-ManBlender/Spider-Man.glb"></a-asset-item> 
 
-        <!-- <a-asset-item id="spiderman1-m" src=""></a-asset-item> -->
-        <!-- "The Amazing Spiderman" (https://skfb.ly/6sRDt) by iqbalmulyawan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
-        <!-- <a-asset-item id="spiderman2-g" src="assets/spiderman1/scene.gltf"></a-asset-item> -->
-        <!-- "spiderman original" (https://skfb.ly/6RxT7) by NVN3 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
-       
-        <!-- <a-asset-item id="box-g" src="assets/boxes/scene.gltf"></a-asset-item> -->
+        <a-asset-item id="box-g" src="assets/boxes/scene.gltf"></a-asset-item>
+        <!-- "wood box" (https://skfb.ly/6RvDJ) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
       </a-assets>
       <!-- Camera -->
       <a-entity position="-3 0 57">
@@ -27,11 +23,12 @@
       <a-sky src="#blue-sky" ></a-sky>
       
       <!-- Boxes -->
-      <!-- <a-entity gltf-model="#box-g" position="0 0 0" rotation="0 -60 0" size="1 1 1"></a-entity> -->
-      
+      <a-entity gltf-model="#box-g" position="1.2 -.2 53.5" size=".5 .5 .5" rotation="0 -40 0"></a-entity>
+      <a-entity gltf-model="#box-g" position="1.5 .75 53.5" size=".5 .5 .5" rotation="0 -40 0"></a-entity>
       <!-- SpiderMan1 -->
-      <a-entity gltf-model="#spiderman1-o" position="-4.7 0 54" rotation="0 60 0"></a-entity>
+      <a-entity gltf-model="#spiderman1-o" position="-4.7 0 54" rotation="0 70 0"></a-entity>
       <!-- SpiderMan2 -->
+      <a-entity gltf-model="#spiderman1-o" position="-2 0 55" rotation="0 -140 0"></a-entity>
     </a-scene>
   </body>
 </html>
