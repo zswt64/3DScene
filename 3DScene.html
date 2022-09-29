@@ -7,18 +7,20 @@
       <!-- Asset Management System -->
       <a-assets>
         <img id="blue-sky" src="assets/bluesky.jpg">
-        <!-- <a-asset-item id="spiderman1-o" src="assets/Spider-ManBlender/ImageToStl.com_spider-man.obj"></a-asset-item> -->
+        <a-asset-item id="spiderman1-o" src="assets/Spider-ManBlender/Spider-Man.glb"></a-asset-item> 
+
         <!-- <a-asset-item id="spiderman1-m" src=""></a-asset-item> -->
         <!-- "The Amazing Spiderman" (https://skfb.ly/6sRDt) by iqbalmulyawan is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
         <!-- <a-asset-item id="spiderman2-g" src="assets/spiderman1/scene.gltf"></a-asset-item> -->
         <!-- "spiderman original" (https://skfb.ly/6RxT7) by NVN3 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+       
         <!-- <a-asset-item id="box-g" src="assets/boxes/scene.gltf"></a-asset-item> -->
       </a-assets>
       <!-- Camera -->
       <a-entity position="-3 0 57">
         <a-camera></a-camera>
       </a-entity>
-      
+
       <a-plane position="-3 0 54" rotation="-90 0 0" width="8" height="5" color="#9395B2"></a-plane>
       
       <!-- Sky -->
@@ -28,7 +30,7 @@
       <!-- <a-entity gltf-model="#box-g" position="0 0 0" rotation="0 -60 0" size="1 1 1"></a-entity> -->
       
       <!-- SpiderMan1 -->
-      <!-- <a-entity obj-model="obj: #spiderman1-o" position="-4.7 0 54" rotation="0 60 0"></a-entity> -->
+      <a-entity gltf-model="#spiderman1-o" position="-4.7 0 54" rotation="0 60 0"></a-entity>
       <!-- SpiderMan2 -->
     </a-scene>
   </body>
