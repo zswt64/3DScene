@@ -6,11 +6,13 @@
     <a-scene>
       <!-- Asset Management System -->
       <a-assets>
-        <img id="blue-sky" src="assets/bluesky.jpg">
         <a-asset-item id="spiderman1-o" src="assets/Spider-Man/Spider-Man.glb"></a-asset-item> 
         <!--"Spider-ManBlender" by Peter France on Youtube -->
+        <a-asset-item id="brick-wall" src="assets/low-poly_brick_wall/scene.gltf"></a-asset>
+        <!-- "Low-Poly Brick Wall" (https://skfb.ly/o8qr9) by NoobiePie is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
         <a-asset-item id="box-g" src="assets/boxes/scene.gltf"></a-asset-item>
         <!-- "wood box" (https://skfb.ly/6RvDJ) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+        <!-- "NYPD Ford Expedition" (https://skfb.ly/6ZqEB) by David_Holiday is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
       </a-assets>
       <!-- Camera -->
       <a-entity position="-3 0 57">
@@ -20,11 +22,13 @@
       <a-plane position="-3 0 54" rotation="-90 0 0" width="8" height="5" color="#9395B2"></a-plane>
       
       <!-- Sky -->
-      <a-sky src="#blue-sky" ></a-sky>
-      
+      <a-sky color="#44466A" ></a-sky>
+      <!-- brick wall -->
+      <a-entity gltf-model="#brick-wall" position="-3 0 51.5"></a-entity>
+      <a-entity gltf-model="#brick-wall" position="-3 1.5 51.5"></a-entity>
       <!-- Boxes -->
-      <a-entity gltf-model="#box-g" position="1.2 -.2 53.5" size=".5 .5 .5" rotation="0 -40 0"></a-entity>
-      <a-entity gltf-model="#box-g" position="1.5 .75 53.5" size=".5 .5 .5" rotation="0 -40 0"></a-entity>
+      <a-entity gltf-model="#box-g" position="1.2 -.2 53.7" size=".5 .5 .5" rotation="0 -40 0"></a-entity>
+      <a-entity gltf-model="#box-g" position="1.5 .75 53.7" size=".5 .5 .5" rotation="0 -40 0"></a-entity>
       <!-- SpiderMan1 -->
       <a-entity gltf-model="#spiderman1-o" position="-4.7 0 54" rotation="0 70 0"></a-entity>
       <!-- SpiderMan2 -->
