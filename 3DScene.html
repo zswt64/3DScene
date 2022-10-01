@@ -12,14 +12,15 @@
         <!-- "Low-Poly Brick Wall" (https://skfb.ly/o8qr9) by NoobiePie is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
         <a-asset-item id="box-g" src="assets/boxes/scene.gltf"></a-asset-item>
         <!-- "wood box" (https://skfb.ly/6RvDJ) by DZs is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
-        <!-- "NYPD Ford Expedition" (https://skfb.ly/6ZqEB) by David_Holiday is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+        <a-asset-item id="police-car" src="assets/nypd_ford_expedition/low_poly_police_van__car.glb"></a-asset-item> 
+        <!-- "low poly police van / car" (https://skfb.ly/6SWoW) by Bongblender is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
       </a-assets>
       <!-- Camera -->
       <a-entity position="-3 0 57">
         <a-camera></a-camera>
       </a-entity>
 
-      <a-plane position="-3 0 54" rotation="-90 0 0" width="8" height="5" color="#9395B2"></a-plane>
+      <a-plane position="-3 0 54" rotation="-90 0 0" width="20" height="5" color="#9395B2"></a-plane>
       
       <!-- Sky -->
       <a-sky color="#44466A" ></a-sky>
@@ -33,6 +34,8 @@
       <a-entity gltf-model="#spiderman1-o" position="-4.7 0 54" rotation="0 70 0"></a-entity>
       <!-- SpiderMan2 -->
       <a-entity gltf-model="#spiderman1-o" position="-2 0 55" rotation="0 -140 0"></a-entity>
+      <!-- WhiteVan -->
+      <a-entity gltf-model="#police-car" size=".5 .5 .5" position="-60 -6 25" rotation="0 -180 0"></a-entity>
     </a-scene>
   </body>
 </html>
